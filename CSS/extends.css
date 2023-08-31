@@ -1,0 +1,10 @@
+@import "./global.css";
+@import "./variable.css";
+
+@import "./Components/about.css";
+@import "./Components/footer.css";
+@import "./Components/header.css";
+@import "./Components/navbar.css";
+@import "./Components/projects.css";
+@import "./Components/skills.css";
+@import "./Components/darkT.css";

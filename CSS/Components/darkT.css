@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--white);
+    transition: background 0.2s linear;
+}
+
+body.dark {
+    background: #1f1f1f;
+    --white: #363636;
+    --gray: #363636;
+    --black: #000000;
+    --primary-color: #00eeff;
+    --secundary-color: #00eeff;
+    --dark-secundary-color: #00f7ff;
+    --tertiary-color: #1af7ff;
+    --light-tertiary-color: #363636;
+    --text-color: #ffffff;
+
+    --font-family:  'DM Sans', sans-serif;
+    color: #ffffff
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    transform: scale(1.5);
+
+}
+
+.label .ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked+.label .ball {
+    transform: translateX(24px);
+}
+
+.fa-moon {
+    color: #f1c40f;
+}
+
+.fa-sun {
+    color: #f39c12;
+}
