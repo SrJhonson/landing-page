@@ -15,8 +15,8 @@
 }
 
 .navbar .navbar__content .navbar__image {
-    width: 270pt;
-    height: 27pt;
+    width: 270px;
+    height: 27px;
 
 }
 
@@ -43,12 +43,11 @@
 
 
 .navbar .navbar__content .navbar__mobile,
-.navbar .navbar__content .navbar__mobile .mobile__links,
-.checkbox__mobile .label__mobile .ball__mobile {
+.navbar .navbar__content .navbar__mobile .mobile__links{
     display: none;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 858px) {
     .navbar .navbar__content .navbar__links {
         display: none;
     }
@@ -63,7 +62,6 @@
         height: 3.6rem;
         cursor: pointer;
     }
-
 
     .navbar .navbar__content .navbar__mobile.active .mobile__links {
         display: flex;
@@ -86,43 +84,6 @@
         padding: 1rem;
         display: block;
         text-align: center;
-    }
-
-    .navbar .navbar__content .navbar__mobile.active .mobile__links .checkbox__mobile {
-        opacity: 0;
-        display: inline-block;
-        align-items: center;
-        position: absolute;
-    }
-
-    .navbar .navbar__content .navbar__mobile.active .mobile__links .label__mobile {
-        background-color: var(--black);
-        border-radius: 50px;
-        cursor: pointer;
-        display: inline-block;
-        justify-content: space-between;
-        align-items: center;
-
-        padding: 3px;
-        height: 26px;
-        width: 50px;
-        transform: scale(1.5);
-    }
-
-    .navbar .navbar__content .navbar__mobile.active .mobile__links .label__mobile .ball__mobile {
-        background-color: var(--white);
-        border-radius: 50%;
-        position: absolute;
-        top: 2px;
-        left: 2px;
-        height: 22px;
-        width: 22px;
-        transform: translateX(0px);
-        transition: transform 0.2s linear;
-    }
-
-    .navbar .navbar__content .navbar__mobile.active .mobile__links .checkbox__mobile:checked+.label__mobile .ball__mobile {
-        transform: translateX(24px);
     }
 
 }

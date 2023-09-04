@@ -109,9 +109,9 @@ p:not(:last-of-type),
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 858px) {
     html {
-        font-size: 58%;
+        font-size: 50%;
     }
 
     .max-width {
