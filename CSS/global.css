@@ -50,6 +50,11 @@ p,
     line-height: 3.5rem;
 }
 
+.projeto {
+    height: 300px;
+    width: 500px;
+}
+
 p:not(:last-of-type),
 .p:not(:last-of-type) {
     margin-bottom: 2rem;
